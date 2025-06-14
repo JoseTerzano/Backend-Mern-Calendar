@@ -33,7 +33,8 @@ const crearUsuario = async(req, res = response ) => {
             ok: true,
             uid: usuario.id,
             name: usuario.name,
-            token
+            token,
+            usuario,
         })
         
     } catch (error) {
