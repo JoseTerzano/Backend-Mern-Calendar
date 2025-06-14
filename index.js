@@ -11,7 +11,10 @@ const app = express();
 dbConnection();
 
 // CORS
-app.use(cors())
+app.use(cors({
+    origin: 'https://backend-mern-calendar-production-49ec.up.railway.app/',
+    credentials: true
+}))
 
 // Directorio Público
 app.use( express.static('public') );
